@@ -1,8 +1,25 @@
-# React + Vite
+# QuizApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###  Features:
+1. Fetches questions from an API.
+2. Renders the questions dynamically.
+3. Shows the result after submission.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
+- React.js
+- JavaScript 
+- CSS for styling
+
+---
+
+### Known Bug
+After selecting an option, the app does not visually indicate:
+- The selected option by the user.
+- The correct option for the question.
+
+---
+
+### Author
+Kamlesh Verma
