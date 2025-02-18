@@ -1,4 +1,5 @@
 # QuizApp
+The app is working almost correct i.e. having one bug.
 
 ###  Features:
 1. Fetches questions from an API.
