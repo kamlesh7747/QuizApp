@@ -1,0 +1,168 @@
+body {
+  background-color: white;
+  color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(rgb(14, 124, 158), rgb(64, 72, 148));
+}
+
+.start {
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.QuizApp {
+  text-align: center;
+  width: 450px;
+  height: 430px;
+  border: 2px solid #2b275d;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #2b275d;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+@media (max-width: 530px) {
+  .QuizApp {
+    width: 95%;
+  }
+}
+
+.question {
+  height: 50px;
+}
+
+.QuizApp ul {
+  padding: 0;
+}
+
+.QuizApp ul li {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(144, 213, 243);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #2b275d;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.QuizApp ul li:hover {
+  background-color: #3799c4;
+  transform: scale(1.025);
+}
+
+button {
+  width: 6rem;
+  padding: 0.4rem;
+  background-color: #2b275d;
+  border: 2px solid #158e8c;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background-color: #158e8c;
+  transform: scale(1.05);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0.7rem 0 0.7rem 0;
+}
+
+.prev {
+  position: absolute;
+  left: 0rem;
+}
+
+.next {
+  position: absolute;
+  right: 0.2rem;
+}
+
+.submit {
+  position: absolute;
+  right: 1rem;
+}
+
+.Q_no {
+  text-align: center;
+  font-weight: bold;
+}
+
+.QuizApp ul li .correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Center the items horizontally */
+  gap: 20px; /* Add space between items */
+  padding: 20px;
+  border-top: 1px solid gray;
+}
+.box {
+  display: flex;
+  flex-direction: column; /* Aligns txt above stats */
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 80px;
+  color: white;
+  margin: 5px; /* Add space between boxes */
+}
+
+.txt {
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #158e8c;
+  color: white;
+  font-size: 2rem;
+  font-family: roboto;
+}
+
+/* For making sure the "correct" is a square box */
+@media (max-width: 600px) {
+  .stats {
+    width: 100px; /* Adjust width for smaller screens */
+    height: 100px; /* Adjust height for smaller screens */
+  }
+}
